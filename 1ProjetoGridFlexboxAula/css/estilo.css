@@ -1,0 +1,325 @@
+:root {
+    --dark: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.bg-dark {
+    background-color: var(--dark);
+}
+
+.logo {
+    padding-left: 10px;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 12px;
+}
+
+.menu a:hover {
+    background-color: #818484;
+    border-radius: 10px;
+}
+
+.menu li {
+    padding: 10px;
+    display: inline;
+    /* border: solid 2px #f00; */
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    top: 0;
+    z-index: 999;
+}
+
+/* .nav>div{
+    border:solid 2px #f00;
+} */
+
+/*superior, direito, inferior, esquerdo
+inline funciona para deixar opões de lista em linha*/
+
+/*CSS BANNER*/
+
+.banner {
+    background: url('../img/hero-bg.png') center / cover no-repeat fixed;
+    display: flex;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.banner>div {
+    width: 50%;
+}
+
+.banner img {
+    width: 80%;
+}
+
+.btn {
+    text-transform: uppercase;
+    border: solid 1px #2c2c2c;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-blue {
+    background-color: rgb(4, 89, 164);
+}
+
+.btn-yellow {
+    background-color: darkorange;
+}
+
+.banner-buttons {
+    text-align: center;
+    margin-top: 32px;
+}
+
+.banner p,
+.banner h2 {
+    padding: 5px;
+}
+
+/*EXERCÍCIO 01 - SERVIÇOS*/
+
+.serv h1 {
+    color: #2c2c22;
+    font-size: 26px;
+    font-weight: lighter;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+.serv-container {
+    display: flex;
+    justify-content: center;
+}
+
+.serv-card {
+    background-color: rgb(220, 220, 220);
+    width: 15%;
+    border-radius: 10%;
+    margin: 20px;
+    padding: 25px;
+    box-shadow: 2px 5px 12px #818484;
+}
+
+.serv-card a {
+    color: black;
+    text-decoration: none;
+}
+
+.serv-card p {
+    text-align: justify;
+    font-weight: lighter;
+
+}
+
+.serv-card h3 {
+    font-size: 22px;
+    font-weight: lighter;
+    text-align: center;
+    padding: 12px;
+}
+
+.serv-img {
+    width: 120px;
+    height: 120px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+/*Aula 20/08/2025*/
+
+.card-gallery article {
+    /*     border: solid #f0f 1px; */
+    background-color: var(--dark);
+    position: relative;
+}
+
+.card-gallery {
+    display: grid;
+    padding-top: 5px;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 300px;
+    gap: 5px;
+}
+
+.card-gallery img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.h-1 {
+    grid-row: span 1;
+}
+
+.h-2 {
+    grid-row: span 2;
+}
+
+.w-1 {
+    grid-column: span 1;
+}
+
+.w-2 {
+    grid-column: span 2;
+}
+
+.w-4 {
+    grid-column: span 4;
+}
+
+.card-gallery h2,
+.card-gallery p {
+    color: #fff;
+    padding: 16px;
+}
+
+.card-gallery h1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+}
+
+.card-gallery .text-gallery {
+    position: absolute;
+    color: var(--dark);
+    top: 0;
+    left: 0;
+}
+
+/* EXERCÍCIO 02 - Depoimentos */
+
+.cont-dep {
+    display: grid; /*Ativa o Grid para o container*/
+    grid-template-columns: repeat(4, 1fr); /* Cria 4 colunas com largura igual */
+    column-gap: 15rem; /* Adiciona um espaçamento muito grande entre as colunas (15x o tamanho da fonte) */
+    margin: 1rem; /* Adiciona uma margem de 1rem em torno de todo o container */
+    padding: 15px;
+}
+
+.cont-dep h1 {
+    text-align: center; /* Centraliza o texto horizontalmente */
+    font-weight: lighter; /* Define um peso de fonte mais fino que o normal */
+    grid-column: 1 / -1; /* Faz o h1 ocupar todas as colunas do grid (da primeira à última) */
+    padding-bottom: 20px;
+}
+
+.cont-dep h3 {
+    text-align: center; /* Centraliza o texto horizontalmente */
+    font-weight: bold; /* Negrito */
+    padding: 2px; /*Preenchimento interno de 2px*/
+    font-family: sans-serif;
+}
+
+.cont-dep img {
+    height: 4rem;
+    width: 4rem;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.cont-dep p {
+    text-align: center;
+}
+
+.cont-dep>div {
+    display: flex; /*Ativa o Flexbox para as divs filhas diretas*/
+    flex-direction: column; /*Organiza os elementos filhos em coluna (verticalmente)*/
+    align-items: center; /*Centraliza os elementos filhos horizontalmente no container*/
+}
+
+/* EXERCÍCIO 03 - FOOTER */
+
+.footer-rp {
+    background-color: #333;
+    /*display: grid;*/
+    display: flex;
+    padding-left: 8px;
+    padding-top: 5px;
+    justify-content: left;
+    /*grid-template-columns: repeat(4, 1fr); */
+}
+
+.footer-content {
+/*     grid-column: 1 / 3; */
+    color: #d0d0d0;
+    width: 50%;
+}
+
+.footer-rp a {
+    text-decoration: none;
+    color: #d0d0d0;
+}
+
+.menu-footer {
+    /* grid-column: 3; */
+    margin-left: 40rem;
+}
+
+.menu-footer2 {
+   /*grid-column: 4; */
+/*    margin-left: 10rem; */
+}
+
+.footer-rp ul {
+    list-style-type: none;
+    font-size: 12px;
+    padding-left: 17px;
+    padding-top: 2px;
+    padding-bottom: 8px;
+}
+
+.footer-rp h3 {
+    color: rgb(155, 155, 155);
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+.footer-copyright {
+    background-color: #000000;
+    padding-top:20px;
+    color: rgb(122, 122, 122);
+    text-align: center;
+}
+/*Imagens adicionadas no html trazem conteúdo necessário para a interface. */
+/*Aplica o absolute e o relative no elemento pai*/

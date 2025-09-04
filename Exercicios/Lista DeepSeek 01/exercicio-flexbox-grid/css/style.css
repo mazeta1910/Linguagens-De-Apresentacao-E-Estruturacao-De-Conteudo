@@ -1,0 +1,149 @@
+/* ===== ESTILOS GERAIS ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* ===== SEÇÃO SERVIÇOS ===== */
+/* TODO: Estilizar a seção de serviços */
+
+/* Contêiner principal dos serviços */
+.servicos-container {
+    /* TODO: Adicionar padding e margin */
+}
+
+/* Título da seção */
+.servicos-titulo {
+    /* TODO: Centralizar texto, definir tamanho da fonte e margin */
+}
+
+/* Contêiner das caixas (usar Flexbox) */
+.servicos-caixas {
+    /* TODO: 
+    - display: flex
+    - justify-content: center
+    - gap: 20px
+    */
+}
+
+/* Estilo das caixas individuais */
+.box {
+    /* TODO:
+    - width: 25%
+    - background-color: #f2f2f2
+    - padding: 20px
+    - border-radius: 15px
+    - box-shadow: 5px 5px 15px rgba(0,0,0,0.1)
+    - text-align: center
+    */
+}
+
+/* Imagens dentro das caixas */
+.box img {
+    /* TODO:
+    - width: 80px
+    - height: 80px
+    - margin-bottom: 15px
+    */
+}
+
+/* ===== SEÇÃO DEPOIMENTOS ===== */
+/* TODO: Estilizar a seção de depoimentos */
+
+.depoimentos-container {
+    /* TODO: Adicionar padding e margin-top */
+}
+
+.depoimentos-container h1 {
+    /* TODO: Centralizar texto */
+}
+
+/* Grid para os depoimentos */
+.depoimentos-grid {
+    /* TODO:
+    - display: grid
+    - grid-template-columns: repeat(4, 1fr)
+    - gap: 2rem
+    - margin: 1rem
+    */
+}
+
+/* Estilo de cada depoimento */
+.depoimento {
+    /* TODO: text-align: center */
+}
+
+/* Avatar (imagem redonda) */
+.depoimento img {
+    /* TODO:
+    - width: 4rem
+    - height: 4rem
+    - border-radius: 50%
+    - margin-bottom: 1rem
+    */
+}
+
+/* ===== RODAPÉ ===== */
+/* TODO: Estilizar o rodapé */
+
+footer {
+    /* TODO:
+    - background-color: #212529
+    - color: white
+    - padding: 40px 20px
+    - text-transform: uppercase
+    - font-weight: bold
+    */
+}
+
+/* Contêiner do conteúdo do footer (usar Flexbox) */
+.footer-content {
+    /* TODO:
+    - display: flex
+    - justify-content: space-around
+    */
+}
+
+/* Primeira coluna (ocupa mais espaço) */
+.footer-info {
+    /* TODO: flex: 2 */
+}
+
+/* Outras colunas */
+.footer-menu {
+    /* TODO: flex: 1 */
+}
+
+/* Listas do menu */
+.footer-menu ul {
+    /* TODO:
+    - list-style: none
+    - padding: 0
+    */
+}
+
+/* Links do menu */
+.footer-menu a {
+    /* TODO:
+    - text-decoration: none
+    - color: white
+    */
+}
+
+/* Seção de copyright */
+.footer-copyright {
+    /* TODO:
+    - text-align: center
+    - margin-top: 30px
+    - border-top: 1px solid #444
+    - padding-top: 20px
+    */
+}
+

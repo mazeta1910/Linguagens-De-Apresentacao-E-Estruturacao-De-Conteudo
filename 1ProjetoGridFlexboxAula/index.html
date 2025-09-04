@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <title>Projeto 1 - Flexbox e Grid</title>
+</head>
+
+<body>
+    <header>
+        <nav class="bg-dark nav">
+            <div class="logo">
+                <a href="#"><img src="img/logo.png" alt="Logo do projeto" title="Logo"></a>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Galeria</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Depoimentos</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href=""><i class="fas fa-envelope"></i></a></li>
+                    <li><a href=""><i class="fas fa-user"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <div>
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit</h2>
+            <img src="img/undraw_stripe_payments_re_chlm.svg" alt="Texto do banner" title="Título do banner">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, explicabo. Id ducimus quia, iusto ut
+                dolorem, tempore officia similique tempora nesciunt nam dolorum nemo veniam perspiciatis blanditiis
+                mollitia. Libero, reiciendis.</p>
+        </div>
+
+        <div>
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe necessitatibus cum ad, fugit odio
+                assumenda ea molestiae repellat quam placeat doloribus veritatis pariatur nemo, magnam itaque officiis!
+                Voluptate, repellendus a.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum assumenda, repellendus saepe
+                obcaecati quis placeat. Aut nostrum, tempora delectus commodi corporis magni voluptatibus, reiciendis
+                quo voluptates unde possimus dolorum accusantium!</p>
+            <div class="banner-buttons">
+                <a href="#" class="btn btn-blue">Portfolio</a>
+                <a href="#" class="btn btn-yellow">Saiba mais</a>
+            </div>
+
+        </div>
+    </section>
+
+    <main>
+        <section>
+            <h1>Galeria de imagens</h1>
+            <section class="card-gallery">
+                <article class="h-2 w-2">
+                    <img src="img/2841901.jpg" alt="">
+                    <h1>Título do artigo 1</h1>
+                </article>
+                <article class="w-2 h-1">
+                    <img src="img/2846378.jpg" alt="">
+                    <h1>Título do artigo 2</h1>
+                </article>
+                <article class="h-2 w-2">
+                    <h2>Lorem Ipsum</h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, dolorem. Quae hic commodi
+                            dolores accusamus? Quam dolore aut quidem blanditiis voluptate suscipit nulla, voluptatem,
+                            esse aliquam deserunt, atque incidunt error?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, in veritatis. In
+                            blanditiis velit officiis quia earum commodi est autem et totam incidunt, repellendus
+                            exercitationem error natus cum accusamus labore.</p>
+                </article>
+                <article class="w-2 h-1">
+                    <img src="img/4025565.jpg" alt="">
+                    <h1>Título do artigo 4</h1>
+                </article>
+                <article class="w-2 h-2">
+                    <p class="text-gallery">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium culpa,
+                        aut veniam ab
+                        provident ipsa velit. Temporibus aliquid laborum numquam aliquam, excepturi earum omnis
+                        laudantium consectetur alias quo dolorum quia!</p>
+                    <img src="img/4025565.jpg" alt="">
+                    <h1>Título do artigo 5</h1>
+                </article>
+                <article class="h-1 w-1">
+                    <img src="img/2846378.jpg" alt="">
+                    <h1>Título do artigo 6</h1>
+                </article>
+                <article class="h-1 w-1">
+                    <img src="img/2841901.jpg" alt="">
+                    <h1>Título do artigo 7</h1>
+                </article>
+                <article class="h-1 w-2">
+                    <h2>Lorem Ipsum</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error exercitationem dolorem
+                        necessitatibus aperiam voluptates officiis provident accusamus, sunt explicabo perferendis esse
+                        odit quaerat illo recusandae dolores eligendi cupiditate fuga quos.</p>
+                </article>
+                <article class="w-4 h-1">
+                    <h2>Lorem Ipsum</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, error omnis iure veniam
+                        exercitationem reprehenderit placeat ipsa ut, ipsum illum deserunt ab aut, voluptate quo! Eos ut
+                        officiis neque optio?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, error omnis iure veniam
+                        exercitationem reprehenderit placeat ipsa ut, ipsum illum deserunt ab aut, voluptate quo! Eos ut
+                        officiis neque optio?</p>
+                </article>
+            </section>
+        </section>
+
+        <section class="serv">
+            <h1>Serviços</h1>
+            <section class="serv-container">
+                <div class="serv-card">
+                    <a href="#"><img class="serv-img" src="img/communication-ge3fff02e4_640.png"
+                            alt="Imagem Atendimento ao Cliente" title="Atendimento ao Cliente">
+                        <h3>Atendimento ao Cliente</h3>
+                    </a>
+                    <p>Tenha acesso a nossa plataforma de suporte ao cliente. Esclareça toda as suas dúvidas ou converse
+                        com um de nossos técnicos.</p></a>
+                </div>
+                <div class="serv-card">
+                    <a href="#"><img class="serv-img" src="img/teaching-g437b2aaed_640.png" alt="Agende seu treinamento"
+                            title="Agendamento de treinamento">
+                        <h3>Agende seu treinamento</h3>
+                    </a>
+                    <p>Agende seu treinamento e da sua equipe. Escolha o(s) tema(s) e agende a data desejada.</p>
+                </div>
+                <div class="serv-card">
+                    <a href="#"><img class="serv-img" src="img/businessmen-g6b9998cdd_640.png"
+                            alt="Faça parte de nossa equipe" title="Equipe">
+                        <h3>Faça parte da nossa equipe</h3>
+                    </a>
+                    <p>Venha fazer parte da nossa equipe. Envie seu currículo que entraremos em contato.</p>
+                </div>
+            </section>
+        </section>
+
+        <section class="cont-dep">
+            <h1>Depoimentos</h1>
+            <div>
+                <img src="img/Captura de tela 2025-08-21 124707.png" alt="">
+                <h3>José Carlos</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium at repellendus consectetur
+                    asperiores quae labore architecto rem eligendi, voluptate ex veniam neque fugiat vero
+                    necessitatibus et possimus iusto maxime. Obcaecati.</p>
+            </div>
+            <div>
+                <img src="img/Captura de tela 2025-08-21 124347.png" class="cont-depalt="">
+                    <h3>Eder</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium at repellendus consectetur
+                        asperiores quae labore architecto rem eligendi, voluptate ex veniam neque fugiat vero
+                        necessitatibus et possimus iusto maxime. Obcaecati.</p>
+                </div>
+                <div>
+                    <img src="img/Captura de tela 2025-08-21 124159.png" alt="">
+                <h3>Matheus Honorato</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium at repellendus consectetur
+                    asperiores quae labore architecto rem eligendi, voluptate ex veniam neque fugiat vero
+                    necessitatibus et possimus iusto maxime. Obcaecati.</p>
+            </div>
+            <div>
+                <img src="img/Sem Título-1.jpg" alt="">
+                <h3>Lucas Doido</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium at repellendus consectetur
+                    asperiores quae labore architecto rem eligendi, voluptate ex veniam neque fugiat vero
+                    necessitatibus et possimus iusto maxime. Obcaecati.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-rp">
+            <div class="footer-content">
+                <h3>Footer Content</h3>
+                <p>Here you can use rows and columns to organize your footer content</p>
+            </div>
+            <div class="menu-footer">
+                <h3>Seja Nosso Parceiro</h3>
+                <ul><li><a href="#">Seja um associado</a></li>
+                <li><a href="#">Anuncie seus produtos</a></li>
+                <li><a href="#">Gerencie seu conteúdo</a></li>
+                <li><a href="#">Faça sua carreira</a></li></ul>
+            </div>
+            <div class="menu-footer2">
+                <h3>Conheça-nos</h3>
+                <ul><li><a href="#">Informações corporativas</a></li>
+                <li><a href="#">Carreiras</a></li>
+                <li><a href="#">Comunidade</a></li>
+                <li><a href="#">Acessibilidade</a></li></ul>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>© Copyright  Linguagens de Estruturação e Apresentação de Conteúdo</p>
+            <p>Curso de Tecnologia em Análise e Desenvolvimento de Sistemas - UTFPR-PB</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
+<!-- Uma tag semântica em HTML é uma tag que descreve claramente seu significado tanto para o navegador quanto para o desenvolvedor,
+indicando a função do conteúdo (como <header>, <article> ou <footer>). -->
+<!-- titulos, vc possui variedade do h1 ate o h6 para trabalhar -->

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/form.css">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <section class="container">
+        <h2>Formulário Completo</h2>
+        <form action="" method="post">
+            <div class="form-group-1">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome">
+            </div>
+            <div>
+                <label for="">Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <div>
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password">
+            </div>
+
+            <div>
+                <label for="number">Número:</label>
+                <input type="number" id="number" name="number">
+            </div>
+
+            <div>
+                <label for="tel">Telefone:</label>
+                <input type="tel" id="tel" name="tel" required pattern="^\(\d{2}\)\s\d{4,5}-\d{4}$">
+            </div>
+
+            <div>
+                <label for="url">URL:</label>
+                <input type="url" id="url" name="url">
+            </div>
+
+            <div>
+                <label for="date">Data:</label>
+                <input type="date" id="date" name="date">
+            </div>
+
+            <div>
+                <label for="time">Hora:</label>
+                <input type="time" id="time" name="time">
+            </div>
+
+            <div>
+                <label for="color">Cor favorita:</label>
+                <input type="color" id="color" name="color">
+            </div>
+
+            <div>
+                <label for="range">Nível de satisfação:</label>
+                <input type="range" id="range" name="range" min="0" max="10">
+            </div>
+
+            <div>
+                <label for="file">Arquivo:</label>
+                <input type="file" id="file" name="file">
+            </div>
+            <div>
+                <label>Gênero</label>
+                <div>
+                    <input type="radio" name="genero" id="masculino" value="m">
+                    <label>Masculino</label>
+                    <input type="radio" name="genero" id="feminino" value="f">
+                    <label>Feminino</label>
+
+                </div>
+            </div>
+            <div>
+                <label>Interesses</label>
+                <div>
+                    <input type="checkbox" name="interesse" id="tecnologia" value="tecnologia">
+                    <label>Tecnologia</label>
+                    <input type="checkbox" name="interesse" id="esportes" value="esportes">
+                    <label>Esporte</label>
+                    <input type="checkbox" name="interesse" id="musica" value="musica">
+                    <label>Música</label>
+                </div>
+            </div>
+            <div>
+                <label>Escolha uma opção</label>
+                <select name="opcao" id="opcao">
+                    <option>Selecione...</option>
+                    <option value="1">Opção 1</option>
+                    <option value="2">Opção 2</option>
+                    <option value="3">Opção 3</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="">Mensagem</label>
+                <textarea name="msg" id="msg"></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </section>
+</body>
+
+</html>
