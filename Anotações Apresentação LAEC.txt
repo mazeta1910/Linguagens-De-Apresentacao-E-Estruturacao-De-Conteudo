@@ -1,0 +1,21 @@
+Componente header:
+
+  const updateCartCount = () => {
+	const cart = JSON.parse(localStorage.getItem('thdfm_cart')) || [];
+	const count = cart.reduce((acc, item) => acc + (item.quantidade || 1), 0);
+	setCartCount(count);
+  };
+	  
+	Por que usar reduce e não for ou forEach?
+		- Reduce transforma um array e transforma em um único valor agregado. Ele é mais limpo e direto para essa tarefa.
+
+	useEffect(() => {
+    updateCartCount();
+    window.addEventListener('cartUpdated', updateCartCount);
+    return () => {
+      window.removeEventListener('cartUpdated', updateCartCount);
+    };
+  }, []);
+
+	Por que usar o windows.addEventListener ao invés de passar o estado?
+		- Pq o header e as páginas que alteram o carrinho são componentes em diferentes ramos da árvore. A solução foi usar um Event Bus, que permite que componentes distantes na árvore conversem entre si.
