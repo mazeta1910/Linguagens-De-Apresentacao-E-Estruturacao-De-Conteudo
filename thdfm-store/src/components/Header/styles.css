@@ -1,0 +1,382 @@
+/* --- RESET BÁSICO E BODY --- */
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #1f2937;
+  background-color: #f9fafb;
+  padding-top: 70px;
+}
+
+/* --- ESTRUTURA DO HEADER --- */
+.header {
+  width: 100%;
+  border-bottom: 1px solid #e0e0e0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: #ffffff;
+  /* Variáveis de Cor para o Navbar */
+  --color-nav-base: #374151;
+  --color-icon-base: #1f2937;
+  --color-hover-primary: #2563eb;
+  --color-hover-bg: #f3f4f6;
+}
+
+.header .container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+}
+
+.header .header-content {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+/* --- GRUPO DA ESQUERDA (LOGO + NAV) --- */
+.header .header-left {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  min-width: 0;
+  flex-shrink: 1;
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 700;
+}
+
+.header .logo-image {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.header .logo-text {
+  font-size: 1.1rem;
+  white-space: nowrap;
+  transition: color 0.2s ease;
+}
+
+.header .logo-text:hover {
+  color: var(--color-hover-primary);
+}
+
+/* Navegação Principal */
+.header .nav {
+  display: flex;
+  gap: 1.5rem;
+  min-width: 0;
+  align-items: center;
+}
+
+.header .nav a {
+  text-decoration: none;
+  color: var(--color-nav-base);
+  font-size: 0.9rem;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: color 0.2s ease;
+}
+
+.header .nav a:hover {
+  color: var(--color-hover-primary);
+}
+
+/* --- ESTILOS DO DROPDOWN (SUBMENU) --- */
+
+.nav-dropdown {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  cursor: pointer;
+}
+
+/* O texto "Camisetas" */
+.dropdown-trigger {
+  color: var(--color-nav-base);
+  font-size: 0.9rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: color 0.2s ease;
+  padding: 1rem 0;
+}
+
+.nav-dropdown:hover .dropdown-trigger {
+  color: var(--color-hover-primary);
+}
+
+.dropdown-trigger .arrow {
+  font-size: 0.6rem;
+  opacity: 0.7;
+}
+
+/* O Menu (Caixa que aparece) */
+.dropdown-menu {
+  display: none; /* Escondido inicialmente */
+  position: absolute;
+  top: 100%; /* Cola logo abaixo do header */
+  left: 0;
+  background-color: #ffffff;
+  min-width: 200px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 0.5rem 0;
+  z-index: 1100;
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+/* Faz aparecer ao passar o mouse */
+.nav-dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Links dentro do submenu */
+.dropdown-menu a {
+  display: block;
+  padding: 0.75rem 1.25rem;
+  color: #374151;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background-color 0.2s, color 0.2s;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f3f4f6;
+  color: var(--color-hover-primary);
+}
+
+/* Detalhe visual: setinha apontando para cima no menu */
+.dropdown-menu::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 20px;
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-left: 1px solid #e5e7eb;
+  border-top: 1px solid #e5e7eb;
+  transform: rotate(45deg);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* --- GRUPO DA DIREITA (AÇÕES) --- */
+.header .header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+/* Barra de Pesquisa */
+.header .search-container {
+  position: relative;
+}
+
+.header .search-input {
+  padding: 0.6rem 0.75rem 0.6rem 2.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  background-color: #f9fafb;
+  font-size: 0.9rem;
+  width: 240px;
+  height: auto;
+  min-height: unset;
+  box-sizing: border-box;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.header .search-input:focus {
+  outline: none;
+  border-color: var(--color-hover-primary);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+.header .search-icon {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1rem;
+  height: 1rem;
+  color: #9ca3af;
+  pointer-events: none;
+}
+
+/* --- PROFILE DROPDOWN (NOVO: Menu de Login/Cadastro) --- */
+.profile-dropdown {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+/* Mostra o menu ao passar o mouse no ícone */
+.profile-dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Classe utilitária para alinhar o menu à DIREITA */
+.dropdown-menu.dropdown-right {
+  left: auto; /* Anula o left: 0 padrão */
+  right: 0; /* Cola na direita */
+  min-width: 180px;
+  margin-top: 0.5rem; /* Pequeno espaço para não colar no ícone */
+}
+
+/* Ajusta a setinha para ficar do lado direito */
+.dropdown-menu.dropdown-right::before {
+  left: auto;
+  right: 14px; /* Posiciona a setinha em cima do ícone */
+}
+
+/* Estilos extras para o menu de perfil */
+.dropdown-header-text {
+  padding: 0.75rem 1.25rem;
+  font-size: 0.85rem;
+  color: #6b7280;
+  font-weight: 600;
+  border-bottom: 1px solid #f3f4f6;
+  background-color: #f9fafb;
+}
+
+.dropdown-divider {
+  height: 1px;
+  background-color: #e5e7eb;
+  margin: 0.25rem 0;
+}
+
+/* --- Botão de Login/Cadastro ("Hominho") --- */
+.header .profile-btn {
+  position: relative;
+  color: var(--color-icon-base);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 99px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.header .profile-btn:hover {
+  background-color: var(--color-hover-bg);
+  color: var(--color-hover-primary);
+}
+
+.header .profile-icon {
+  width: 24px;
+  height: 24px;
+  stroke: currentColor;
+}
+
+/* --- Botão do Carrinho --- */
+.header .cart-btn {
+  position: relative;
+  color: var(--color-icon-base);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 99px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.header .cart-btn:hover {
+  background-color: var(--color-hover-bg);
+  color: var(--color-hover-primary);
+}
+
+.header .cart-icon {
+  width: 24px;
+  height: 24px;
+  stroke: currentColor;
+}
+
+.header .cart-count {
+  position: absolute;
+  top: -5px;
+  right: -8px;
+  background-color: #ef4444;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.125rem 0.375rem;
+  border-radius: 9999px;
+  min-width: 12px;
+  text-align: center;
+}
+
+/* Cria uma área invisível acima do menu para manter o mouse "capturado" */
+.dropdown-menu::after {
+  content: "";
+  position: absolute;
+  top: -20px; /* Estica para cima cobrindo o espaço vazio */
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background: transparent; /* Invisível */
+  cursor: pointer;
+}
+
+/* Garante que a setinha continue aparecendo (se estiver usando ::before para ela) */
+.dropdown-menu::before {
+  z-index: 1; /* Fica acima da ponte */
+}
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 1024px) {
+  .header .nav {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .header .search-container {
+    display: none;
+  }
+
+  .header .logo-text {
+    display: none;
+  }
+
+  .header .header-content {
+    height: 60px;
+  }
+
+  body {
+    padding-top: 60px;
+  }
+
+  .header .container {
+    padding: 0 1rem;
+  }
+}

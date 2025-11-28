@@ -1,0 +1,73 @@
+[
+  {
+    "id": 1,
+    "nome": "Camiseta Geninho no Aeroporto",
+    "imagemPrincipal": "/produtos/geninho.png",
+    "imagens": [
+      "/produtos/geninho.png",
+      "/produtos/branca-costas.png"
+    ],
+    "badge": "20% OFF",
+    "descricao": "A foto mais icônica da história da THDFM estampada para você em uma camiseta.",
+    "variantes": [
+      {
+        "estilo": "GEN-PTO-P",
+        "cor": "Preto",
+        "tamanho": "P",
+        "preco": 88.00,
+        "precoAntigo": 110.00,
+        "imagem": "/produtos/geninho.png"
+      },
+      { "estilo": "GEN-PTO-M", "cor": "Preto", "tamanho": "M", "preco": 88.00, "precoAntigo": 110.00, "imagem": "/produtos/geninho.png" },
+      { "estilo": "GEN-PTO-G", "cor": "Preto", "tamanho": "G", "preco": 88.00, "precoAntigo": 110.00, "imagem": "/produtos/geninho.png" }
+    ]
+  },
+  {
+    "id": 2,
+    "nome": "Camiseta N é possível",
+    "imagemPrincipal": "/produtos/n-e-possivel.png",
+    "imagens": [
+      "/produtos/n-e-possivel.png",
+      "/produtos/preta-costas.png"
+    ],
+    "badge": "20% OFF",
+    "descricao": "N é possível q tão colocando essa camiseta como uma camiseta ruim.",
+    "variantes": [
+      { "estilo": "NEP-BCO-P", "cor": "Branco", "tamanho": "P", "preco": 88.00, "precoAntigo": 110.00, "imagem": "/produtos/n-e-possivel.png" },
+      { "estilo": "NEP-BCO-M", "cor": "Branco", "tamanho": "M", "preco": 88.00, "precoAntigo": 110.00, "imagem": "/produtos/n-e-possivel.png" },
+      { "estilo": "NEP-BCO-G", "cor": "Branco", "tamanho": "G", "preco": 88.00, "precoAntigo": 110.00, "imagem": "/produtos/n-e-possivel.png" }
+    ]
+  },
+  {
+    "id": 3,
+    "nome": "Camiseta Análise",
+    "imagemPrincipal": "/produtos/analise.png",
+    "imagens": [
+      "/produtos/analise.png",
+      "/produtos/branca-costas.png"
+    ],
+    "badge": null,
+    "descricao": "ANÁLISE.",
+    "variantes": [
+       { "estilo": "ANL-PTO-P", "cor": "Preto", "tamanho": "P", "preco": 88.00, "precoAntigo": null, "imagem": "/produtos/analise.png" },
+       { "estilo": "ANL-PTO-M", "cor": "Preto", "tamanho": "M", "preco": 88.00, "precoAntigo": null, "imagem": "/produtos/analise.png" },
+       { "estilo": "ANL-PTO-G", "cor": "Preto", "tamanho": "G", "preco": 88.00, "precoAntigo": null, "imagem": "/produtos/analise.png" }
+    ]
+  },
+  {
+    "id": 4,
+    "nome": "Camiseta Ramón Díaz",
+    "imagemPrincipal": "/produtos/ramon-diaz.png",
+    "imagens": [
+      "/produtos/ramon-diaz.png",
+      "/produtos/preta-costas.png"
+    ],
+    "badge": null,
+    "descricao": "Camiseta em homenagem ao nosso querido Dinossauro Ramón Díaz.",
+    "variantes": [
+       { "estilo": "RMD-BCO-P", "cor": "Branco", "tamanho": "P", "preco": 88.00, "precoAntigo": null, "imagem": "/produtos/ramon-diaz.png" },
+       { "estilo": "RMD-BCO-M", "cor": "Branco", "tamanho": "M", "preco": 88.00, "precoAntigo": null, "imagem": "/produtos/ramon-diaz.png" },
+       { "estilo": "RMD-BCO-G", "cor": "Branco", "tamanho": "G", "preco": 88.00, "precoAntigo": null, "imagem": "/produtos/ramon-diaz.png" }
+    ]
+  }
+]
